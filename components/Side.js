@@ -1,1 +1,5 @@
-//side menu goes here
+const Side = () => (<>
+  //side menu goes here
+
+</>); 
+export default Side;
