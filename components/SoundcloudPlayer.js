@@ -1,4 +1,4 @@
-import { attributes, html } from '../config/config.md';
+import { attributes, html } from '../config/soundcloud-iframe.md';
 
 
 const SoundcloudPlayer = () => (<div className="p-0 m-0">
