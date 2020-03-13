@@ -1,16 +1,15 @@
 import { attributes, html } from '../config/config.md';
 
 
-
-const SoundcloudPlayer = () => (<div>
+const SoundcloudPlayer = () => (<div className="p-0 m-0">
 <iframe
-width="100%"
-height="120"
-scrolling="no"
-frameBorder="no"
-allow="autoplay"
+width={attributes.SouncloudIframeWidth} 
+height={attributes.SouncloudIframeHeight} 
+scrolling={attributes.SouncloudIframeScrolling}
+frameBorder={attributes.SouncloudIframeFrameBorder}
+allow={attributes.SouncloudIframeAllow}
 src={attributes.SouncloudIframeURL}
-alt="sc"
+alt={attributes.SouncloudIframeAlt}
 >
 </iframe>
 </div>
