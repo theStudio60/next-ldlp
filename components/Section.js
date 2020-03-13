@@ -1,13 +1,7 @@
 
-
-
-const sectionStyle = {minHeight:"96vh"};
-
 const Section = (props) => (
-  <section  style={sectionStyle} className="section w-100 h-100">
-    <div className="container-fluid p-4 text-center">
+  <section className="section w-100 h-100 m-0 p-0">
       {props.children}
-    </div>    
   </section>
 );
 
