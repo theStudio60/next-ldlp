@@ -1,0 +1,23 @@
+  
+{
+  "name": "next-ldlp",
+  "version": "1.0.0",
+  "description": "Website of ldlp",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "frontmatter-markdown-loader": "^3.2.1",
+    "next": "^9.3.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
