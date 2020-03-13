@@ -3,38 +3,37 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Main from '../components/Main';
 import SoundcloudPlayer from '../components/SoundcloudPlayer';
+import Homepage_Section_Top from './homepage/sections/top';
+import Homepage_Section_01 from  './homepage/sections/01';
 import Section from '../components/Section';
 import { attributes, html } from '../content/index.md';
 
 const introStyle = {fontSize: 32};
-const topSectionStyle = {paddingTop: "25vh"};
+ 
+const Index = () => (<>
+  <Header/>
+  <Main>
+    <Homepage_Section_Top>
 
-const Index = () => (
-  <div>
-    <Header/>
-    <Main  >
-      <Section   >
-      <div className="container-fluid"  style={topSectionStyle}   >
-        <div  className = "row">
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-8 ml-auto mr-auto">
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-8 ml-auto mr-auto text-center">
             <h1 className="text-uppercase">{attributes.title}</h1>
             <p style={introStyle}>
               {attributes.introduction}
-            </p>
-           
-              <SoundcloudPlayer/>
-          
-          <a href={attributes.link_url_01} >{attributes.link_name_01}</a>
+            </p> 
+      <SoundcloudPlayer/>
 
+            <a href={attributes.link_url_01} >{attributes.link_name_01}</a>
           </div>
-        </div>
+
+    </Homepage_Section_Top>
+    <Homepage_Section_01>
+      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-8 ml-auto mr-auto text-center">
+        <a href={attributes.link_url_01} >
+         {attributes.link_name_01}
+        </a>
       </div>
-      </Section>
-
-    </Main>
-
-    
-    <Footer/>
-  </div>
-);
+    </Homepage_Section_01>
+  </Main>
+  <Footer/>
+</>);
 export default Index;
