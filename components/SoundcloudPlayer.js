@@ -1,6 +1,5 @@
 import { attributes, html } from '../config/soundcloud-iframe.md';
 
-
 const SoundcloudPlayer = () => (<div className="p-0 m-0">
 <iframe
 width={attributes.SouncloudIframeWidth} 
