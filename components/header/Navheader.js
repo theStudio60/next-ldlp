@@ -3,8 +3,8 @@ import { attributes, html } from '../../config/config.md';
 
 const Navheader = () => (
   <div className="navbar-header">
-    <Link className="navbar-brand text-uppercase" href="/">
-    <a>
+    <Link href="/">
+    <a className="navbar-brand text-uppercase" >
       <h1>{attributes.AppName}</h1>
     </a>
     </Link>
