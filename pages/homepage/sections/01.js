@@ -1,15 +1,16 @@
 import Section from '../../../components/Section';
-
+// THis is NOT the TOP section,
+// it is the section that follow the top-section
 const sectionBody = {
   minHeight:"50vh",
-  backgroundColor:"#222",
-  paddingTop:"25%",
-  paddingBottom:"25%"
+  backgroundColor:"#000",
+  paddingTop:"64px",
+  paddingBottom:"64px"
 };
 
 const Homepage_Section_01 = (props) => (<>
-  <Section className="section m-0 p-0 " >
-    <div className="container-fluid m-0 p-4" style={sectionBody}>
+  <Section iclassName="section m-0 p-0 "   id="s_01">
+    <div className="container-fluid m-0 " style={sectionBody}>
       <div className="row" >
         {props.children}
       </div>
