@@ -9,21 +9,19 @@ import Homepage_Section_02 from  './homepage/sections/02';
 import Homepage_Section_03 from  './homepage/sections/03';
 import { attributes, html } from '../content/index.md';
 
-const introStyle = {fontSize: 32};
+const introductionStyle = {fontSize: 32};
  
 const Index = () => (<>
   <Header/>
   <Main>
     <Homepage_Section_Top>
-
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-8 ml-auto mr-auto text-center">
             <h1 className="text-uppercase">{attributes.title}</h1>
-            <p style={introStyle}>
+            <p style={introductionStyle}>
               {attributes.introduction}
             </p> 
              <SoundcloudPlayer/>
           </div>
-
     </Homepage_Section_Top>
     <Homepage_Section_01>
       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 ml-auto mr-auto text-center">
