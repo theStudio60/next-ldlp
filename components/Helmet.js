@@ -2,8 +2,7 @@
 import { attributes, html } from '../config/seo.md';
 
 const Helmet = () => (<>
-    <meta charSet="utf-8" />
-    
+ 
     <title>{attributes.Title}</title>
     <noscript><meta httpEquiv="refresh"/></noscript>
 
